@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Heatmap of Goa's data</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.11.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-geo/1.9.1/d3-geo.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-scale/1.0.7/d3-scale.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/2.4.0/d3-geo-projection.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <select id="map-selector">
+        <option value="" selected disabled>Select the map</option>
+        <option value="c_unit_map">Census Unit Map</option>
+        <option value="c_unit_map_s">Census Unit Map (simplified)</option>
+        <option value="pernem">Pernem</option>
+        <option value="bardez">Bardez</option>
+        <option value="sanguem">Sanguem</option>
+        <option value="ponda">Ponda</option>
+        <option value="sattari">Sattari</option>
+        <option value="bicholim">Bicholim</option>
+        <option value="canacona">Canacona</option>
+        <option value="quepem">Quepem</option>
+        <option value="salcete">Salcete</option>
+        <option value="tiswadi">Tiswadi</option>
+        <option value="darbandora">Darbandora</option>
+        <option value="mormugao">Mormugao</option>
+        <option value="vp_final">All VPs</option>
+        <option value="vp_final_s">All VPs simpified</option>
+      </select>
+      <select id="property-selector">
+        <option value="" selected disabled>Select the data</option>
+
+      </select>
+      <div class="information-text">
+
+      </div>
+      <div class="legend-text">
+
+      </div>
+
+
+    </div>
+  </body>
+    <script src="index.js"></script>
+</html>
