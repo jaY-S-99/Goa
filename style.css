@@ -15,7 +15,7 @@ text{
     fill: black;
 }
 .census_unit{
-  transition: 0.75s;
+  transition: 0.5s;
   transition-timing-function: ease-in-out;
 
 }
