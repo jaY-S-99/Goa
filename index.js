@@ -69,7 +69,7 @@ const starting_pos_vp = {
 const map_unidentified_color = "#D8D8D8";
 
 const color = d3.scaleThreshold()
-  .domain([0.01, 0.03, 0.1, 0.15, 0.45, 0.75])
+  .domain([0.01, 0.03, 0.1, 0.2, 0.45, 0.75])
   .range(["#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506"]);
 
 const legendColors = ["#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506","#F0F0F0"];
