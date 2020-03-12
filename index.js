@@ -35,7 +35,6 @@ const data_n = {
   vp_final_s: d3.csv("./data/VP_data.csv")
 };
 const notToBeDisplayed = ["ID","State","District","Subdistt","Town/Village","Ward","EB","Level","Name","TRU","VP/MC","VP Area", "VP Population"]
-
 const urbRuralClassification = {
 "I" : "#fec44f",
 "II":"#fe9929",
@@ -48,9 +47,7 @@ const urbRuralClassification = {
 "C": "#408737",
 "D": "#156609"
 };
-
 const urbRuralColors = ["#fec44f","#fe9929","#ec7014","#cc4c02","#993404","#662506","#A1D39A","#6CC160","#408737","#156609"];
-
 const starting_pos_vp = {
   "Bardez": 0,
   "Bicholim": 34,
@@ -65,15 +62,12 @@ const starting_pos_vp = {
   "Tiswadi": 170,
   "Sanguem": 190
 }
-
 const map_unidentified_color = "#D8D8D8";
-
+const vals = [0.00001, 0.0005, 0.0305, 0.2, 0.45];
 const color = d3.scaleThreshold()
-  .domain([0.01, 0.03, 0.1, 0.2, 0.45, 0.75])
-  .range(["#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506"]);
-
-const legendColors = ["#fee391", "#fec44f", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506","#F0F0F0"];
-
+  .domain(vals)
+  .range(["#D8D8D8","#fee391", "#fe9929", "#cc4c02", "#993404", "#662506"]);
+const legendColors = ["#fee391", "#fe9929", "#ec7014", "#cc4c02", "#993404", "#662506","#F0F0F0"];
 const height = 680;
 const width = 1280;
 
@@ -186,7 +180,6 @@ function updateColorsAndTooltip(json, csv)
         .style('font-family','\'Nunito\', sans-serif');
 
   //THIS PART IS TO ADD LEGENDS TO THE MAP
-  const vals = [0.01, 0.03, 0.1, 0.15, 0.45, 0.75];
   if(selectedMap === "c_unit_map" || selectedMap === "c_unit_map_s")
   {
     let arrayOfLegendValues = vals.map(function(d){return Math.round(maxValue*d);});

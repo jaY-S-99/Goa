@@ -1,6 +1,6 @@
 .census_unit:hover{
     opacity: 0.5;
-    transition: 0.1s;
+    transition: 0.05s;
 }
 .grid-container{
   display: grid;
@@ -15,7 +15,7 @@ text{
     fill: black;
 }
 .census_unit{
-  transition: 0.5s;
+  transition: 0.3s;
   transition-timing-function: ease-in-out;
 
 }
