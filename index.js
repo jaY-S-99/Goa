@@ -63,7 +63,7 @@ const starting_pos_vp = {
   "Sanguem": 190
 }
 const map_unidentified_color = "#D8D8D8";
-const vals = [0.00001, 0.0005, 0.0305, 0.2, 0.45];
+const vals = [0.00001, 0.00450216, 0.030014421, 0.200096146, 0.400192292];
 const color = d3.scaleThreshold()
   .domain(vals)
   .range(["#D8D8D8","#fee391", "#fe9929", "#cc4c02", "#993404", "#662506"]);
